@@ -1,7 +1,8 @@
-entrypoint = "README.md"
-run = "sh startup.sh"
+entrypoint = "htdocs/Project-ITCS-333/MainPage.html"  
+run = "sh all.sh"
 hidden = ["startup.sh", "sql_data"]
 language = "php"
+modules = ["nodejs-20"]
 
 [nix]
 channel = "stable-21_11"
@@ -13,3 +14,18 @@ pattern = "**/*.php"
 
 [languages.css]
 pattern = "**/*.css"
+
+[[ports]]
+localPort = 8000
+externalPort = 80
+
+[env]
+DB_HOST = "127.0.0.1"
+DB_NAME = "campusnews"
+DB_USER = "user1"
+DB_PASS = "wadeea333"
+UPLOAD_DIR = "uploads"
+ALLOWED_FILE_TYPES = "image/jpeg,image/png,image/gif"
+MAX_FILE_SIZE = "2097152"
+
+

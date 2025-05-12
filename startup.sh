@@ -1,4 +1,5 @@
 #! /bin/sh
+
 export MYSQL_HOME=$HOME/$REPL_SLUG/sql_data
 
 # clean shutdown of existing database
