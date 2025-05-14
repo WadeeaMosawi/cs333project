@@ -1,5 +1,5 @@
 entrypoint = "htdocs/Project-ITCS-333/MainPage.html"  
-run = "sh all.sh"
+run = "sh startup.sh"
 hidden = ["startup.sh", "sql_data"]
 language = "php"
 modules = ["nodejs-20"]
